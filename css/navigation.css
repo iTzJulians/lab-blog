@@ -1,0 +1,180 @@
+/* Menú de navegación — Juan (Tarea 3). El equipo usa styles.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --nav-cream: #f3ede4;
+  --nav-forest: #2d4a23;
+  --nav-forest-dark: #1e3318;
+  --nav-lime: #a8cf45;
+  --nav-lime-hover: #96b83a;
+  --nav-white: #ffffff;
+  --nav-text-dark: #2c2c2c;
+  --nav-height: 104px; /* altura del menú fijo */
+}
+
+body {
+  padding-top: var(--nav-height);
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+/* Barra superior */
+.site-header .top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 3rem;
+  background-color: var(--nav-cream);
+  font-size: 0.8rem;
+  color: var(--nav-text-dark);
+}
+
+.site-header .top-bar__text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-header .top-bar__icon {
+  font-size: 0.75rem;
+  color: var(--nav-forest);
+}
+
+.site-header .social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--nav-white);
+  border: 1px solid #ddd5c8;
+  color: var(--nav-forest-dark);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.site-header .social-links a:hover {
+  background-color: var(--nav-forest);
+  color: var(--nav-white);
+  border-color: var(--nav-forest);
+}
+
+/* Barra principal */
+.site-header .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 3rem;
+  background-color: var(--nav-white);
+  border-bottom: 1px solid #e8e2d8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.site-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+  color: var(--nav-forest-dark);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.site-header .logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--nav-lime);
+  color: var(--nav-forest-dark);
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.site-header .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .nav-link {
+  text-decoration: none;
+  color: var(--nav-text-dark);
+  font-size: 0.95rem;
+}
+
+.site-header .nav-link:hover {
+  color: var(--nav-forest);
+}
+
+.site-header .nav-link.is-active {
+  font-weight: 600;
+  color: var(--nav-forest);
+}
+
+.site-header .nav-link--cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.5rem;
+  border-radius: 999px;
+  background-color: var(--nav-lime);
+  color: var(--nav-forest-dark);
+  font-weight: 600;
+}
+
+.site-header .nav-link--cta:hover {
+  background-color: var(--nav-lime-hover);
+}
+
+.site-header .nav-link--cta.is-active {
+  background-color: var(--nav-lime-hover);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 140px;
+  }
+
+  .site-header .top-bar,
+  .site-header .main-nav {
+    flex-direction: column;
+    height: auto;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+
+  .site-header .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
