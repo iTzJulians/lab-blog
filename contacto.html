@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/navigation.css">
 
     <!-- SÍ TOCAR: acá van los estilos de ustedes -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/styleFooter.css">
 </head>
 <body>
@@ -44,6 +44,88 @@
     <!-- ===== FIN DEL MENÚ ===== -->
 
     <!-- EQUIPO: empiecen a escribir su código desde acá ↓ -->
+
+    <div class="contacto-page">
+        <section class="hero-contact">
+            <a href="#" class="badge">Conecta un poco más</a>
+            <h1>Contactanos</h1>
+            <p>Somos estudiantes de Gen Colombia, en este apartado te puedes comunicar con nosotros para proyectos o ideas que quieras implementar, no lo dudes, estamos 100% en el mood</p>
+            <div class="wave-separator">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0,0 C150,90 350,10 500,60 C650,110 850,30 1000,70 C1150,110 1200,20 1200,20 L1200,120 L0,120 Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section class="cards-container" aria-label="Datos de contacto">
+            <article class="info-card">
+                <div class="icon-badge"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                <h3>Números de Contacto</h3>
+                <p>(601) 567 124 / (602) 563 356</p>
+                <a href="#" class="card-link">Llamanos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
+
+            <article class="info-card featured">
+                <div class="icon-badge"><i class="fa-regular fa-envelope" aria-hidden="true"></i></div>
+                <h3>Correo de Contacto</h3>
+                <p>StudentsGrupo4@genstudents.com</p>
+                <a href="mailto:StudentsGrupo4@genstudents.com" class="card-link">Escribenos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
+
+            <article class="info-card">
+                <div class="icon-badge"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                <h3>Colombia</h3>
+                <p>Estamos ubicados en regiones especificas de Colombia, Antioquia y Cundinamarca</p>
+                <a href="#" class="card-link">Ubicanos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </article>
+        </section>
+
+        <main class="main-content">
+            <section class="column-left">
+                <h2>Horarios de Contacto</h2>
+                <p>Nuestro trabajo es Free-lance, puedes contactarnos en cualquier hora; Sin embargo el rango de respuesta de correos es de 12 a 24 horas</p>
+
+                <ul class="time-list">
+                    <li><i class="fa-regular fa-clock" aria-hidden="true"></i> <span>Lunes a Viernes 8:00 AM- 5:00 PM</span></li>
+                    <li><i class="fa-regular fa-clock" aria-hidden="true"></i> <span>HORA COLOMBIA</span></li>
+                </ul>
+
+                <h4>Location :</h4>
+                <div class="map-box">
+                    <div class="map-fallback">
+                        <i class="fa-solid fa-map-location-dot fa-2x" style="color: var(--azul-profundo); margin-bottom: 10px;" aria-hidden="true"></i>
+                        <p>Bogotá, Colombia</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="column-right">
+                <div class="form-box">
+                    <span class="form-badge">Contactanos</span>
+                    <h2>Ingresa tus datos</h2>
+
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="txt-email">Email</label>
+                            <input type="email" id="txt-email" placeholder="Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txt-name">Nombre</label>
+                            <input type="text" id="txt-name" placeholder="Nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txt-message">Mensaje</label>
+                            <textarea id="txt-message" rows="4" placeholder="Mensaje" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer class="site-footer">
         <div class="site-footer__top">
