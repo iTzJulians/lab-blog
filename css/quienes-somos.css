@@ -1,0 +1,80 @@
+/* Quiénes Somos — Nataly */
+
+.quienes-somos {
+  --qs-azul: #0f4c81;
+  --qs-crema: #d0b18a;
+  --qs-amarillo: #f0d051;
+  --qs-verde: #a6b1a0;
+  --qs-blanco: #ffffff;
+
+  background: linear-gradient(135deg, var(--qs-azul), var(--qs-amarillo));
+  font-family: Arial, sans-serif;
+  min-height: calc(100vh - var(--nav-height));
+  padding: 30px;
+}
+
+.quienes-somos .about {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.quienes-somos .sub-heading {
+  color: var(--qs-blanco);
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 0 0 1rem;
+}
+
+.quienes-somos h2 {
+  color: var(--qs-amarillo);
+  margin-top: 30px;
+}
+
+.quienes-somos p {
+  color: var(--qs-blanco);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0;
+}
+
+.quienes-somos .imagen {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.quienes-somos .imagen img {
+  width: 70%;
+  max-width: 500px;
+  border-radius: 15px;
+  border: 5px solid var(--qs-verde);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.quienes-somos .imagen img:hover {
+  transform: scale(1.05);
+  border-color: var(--qs-amarillo);
+}
+
+@media (max-width: 600px) {
+  .quienes-somos {
+    padding: 20px;
+  }
+
+  .quienes-somos .about {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .quienes-somos .sub-heading {
+    font-size: 1.6rem;
+  }
+
+  .quienes-somos .imagen img {
+    width: 90%;
+  }
+}
