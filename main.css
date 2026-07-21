@@ -1,0 +1,52 @@
+:root
+{
+    --color1: #0f4c81;
+    --color2: #D0b18A;
+    --color3: #a6b1a0;
+    --color4: #b4b4b4;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    width: 60%;
+    margin: auto;
+    border: solid, 1px var(--color4);
+    
+}
+.Usuario{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--color4);
+}
+.InfoUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.NombreUsuario{
+    margin: 0;
+}
+.Seguidores{
+    color: var(--color4)
+}
+.Perfil{
+    display: flex;
+    gap: 30px;
+}
+button{
+    width: auto;
+    height: 40px;
+    padding: 10px 30px;
+    border-style: none;
+    background-color: var(--color1);
+    border-radius: 2rem;
+    color: white;
+}
+.pfp{
+    width: 80px;
+    height: 80px;
+}
+
