@@ -1,0 +1,104 @@
+/* Layout compartido — hero + onda (contacto, quiénes somos) */
+
+.page-shell {
+  font-family: "Poppins", system-ui, sans-serif;
+  color: var(--brand-texto);
+  background-color: var(--brand-crema);
+}
+
+.page-hero {
+  background-color: var(--brand-azul);
+  color: var(--brand-blanco);
+  text-align: center;
+  padding: 4rem 1.25rem 7.5rem;
+  position: relative;
+}
+
+.page-hero .badge {
+  display: inline-block;
+  border: 1.5px solid var(--brand-amarillo);
+  color: var(--brand-amarillo);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+  background: transparent;
+}
+
+a.page-hero .badge:hover,
+.page-hero a.badge:hover {
+  background-color: var(--brand-amarillo);
+  color: var(--brand-azul);
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 0 0 1rem;
+  letter-spacing: 0.02em;
+}
+
+.page-hero p {
+  max-width: 38rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  opacity: 0.92;
+  line-height: 1.65;
+}
+
+.wave-separator {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-separator svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.wave-separator .shape-fill {
+  fill: var(--brand-crema);
+}
+
+.page-card {
+  max-width: var(--max-width);
+  margin: -3.5rem auto 4rem;
+  padding: 2.5rem;
+  background: var(--brand-blanco);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  border-top: 5px solid var(--brand-verde);
+  position: relative;
+  z-index: 2;
+}
+
+.page-card h2 {
+  color: var(--brand-azul);
+  font-size: 1.35rem;
+  margin: 2rem 0 0.75rem;
+}
+
+.page-card h2:first-of-type {
+  margin-top: 0;
+}
+
+.page-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .page-card {
+    margin: -2.5rem 1rem 3rem;
+    padding: 1.5rem;
+  }
+}

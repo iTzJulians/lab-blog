@@ -3,31 +3,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /*
- * Paleta armónica (análoga en verde):
- * - Fondos: salvia (mismo matiz que el verde bosque, sin tono amarillo)
- * - Primarios: verde bosque
- * - Acento: verde oliva (entre bosque y lima, sin chocar)
+ * Paleta unificada InfoTech (contacto + footer + sitio)
  */
 :root {
-  --nav-sage: #f0f4ef;
-  --nav-sage-deep: #e4ebe2;
-  --nav-border: #cdd8c8;
-  --nav-forest-dark: #1c3020;
-  --nav-forest: #2a4530;
-  --nav-forest-mid: #3d5c42;
-  --nav-accent: #7fa84e;
-  --nav-accent-hover: #6d9442;
-  --nav-accent-light: #e2edd4;
-  --nav-white: #ffffff;
-  --nav-text: #1c3020;
-  --nav-text-muted: #5a6f58;
+  --brand-azul: #0f4c81;
+  --brand-azul-dark: #0a3a62;
+  --brand-crema: #f5ebe0;
+  --brand-crema-suave: #d0b18a;
+  --brand-amarillo: #f0d051;
+  --brand-amarillo-hover: #e6c040;
+  --brand-verde: #a6b1a0;
+  --brand-acento: #cd212a;
+  --brand-blanco: #ffffff;
+  --brand-texto: #2b2d42;
+  --brand-texto-muted: #5a6578;
+  --brand-footer-text: #d9e5c9;
+  --brand-footer-heading: #f7f7f2;
+  --brand-footer-muted: #c4d3aa;
+  --max-width: 1100px;
+  --radius-card: 16px;
+  --radius-pill: 999px;
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
   --nav-height: 104px;
 
-  /* compatibilidad con nombres anteriores */
-  --nav-cream: var(--nav-sage);
-  --nav-lime: var(--nav-accent);
-  --nav-lime-hover: var(--nav-accent-hover);
-  --nav-text-dark: var(--nav-text);
+  /* aliases nav / blog */
+  --nav-sage: var(--brand-crema);
+  --nav-sage-deep: #ebe3d6;
+  --nav-border: var(--brand-verde);
+  --nav-forest-dark: var(--brand-azul-dark);
+  --nav-forest: var(--brand-azul);
+  --nav-forest-mid: #1a5a8f;
+  --nav-accent: var(--brand-amarillo);
+  --nav-accent-hover: var(--brand-amarillo-hover);
+  --nav-accent-light: #fdf6d8;
+  --nav-white: var(--brand-blanco);
+  --nav-text: var(--brand-texto);
+  --nav-text-muted: var(--brand-texto-muted);
+  --nav-cream: var(--brand-crema);
+  --nav-lime: var(--brand-amarillo);
+  --nav-lime-hover: var(--brand-amarillo-hover);
+  --nav-text-dark: var(--brand-texto);
 }
 
 body {
@@ -126,10 +141,10 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--nav-lime);
-  color: var(--nav-forest-dark);
+  background-color: var(--brand-amarillo);
+  color: var(--brand-azul);
   font-size: 1.1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(15, 76, 129, 0.2);
 }
 
 .site-header .nav-links {
@@ -161,10 +176,11 @@ body {
   align-items: center;
   gap: 0.45rem;
   padding: 0.55rem 1.5rem;
-  border-radius: 999px;
-  background-color: var(--nav-lime);
-  color: var(--nav-forest-dark);
+  border-radius: var(--radius-pill);
+  background-color: var(--brand-amarillo);
+  color: var(--brand-azul);
   font-weight: 600;
+  box-shadow: 0 4px 10px rgba(240, 208, 81, 0.35);
 }
 
 .site-header .nav-link--cta:hover {
