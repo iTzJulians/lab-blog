@@ -1,4 +1,3 @@
-
 :root {
     --azul-profundo: #0F4C81;  
     --suave-crema: #D0B18A;     
@@ -9,7 +8,6 @@
     --blanco: #FFFFFF;
     --texto-oscuro: #2B2D42;
 }
-
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -24,13 +22,8 @@ html {
     background-color: var(--crema-claro);
 }
 
-
 .hero-contact {
     background-color: var(--azul-profundo);
-    
-    background-image: (rgba(15, 76, 129, 0.85), rgba(15, 76, 129, 0.95)), url('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=600');
-    background-size: cover;
-    background-position: center;
     color: var(--blanco);
     text-align: center;
     padding: 80px 20px 120px 20px;
@@ -68,7 +61,6 @@ html {
     opacity: 0.9;
     line-height: 1.6;
 }
-
 
 .wave-separator {
     position: absolute;
@@ -112,16 +104,19 @@ html {
     position: relative;
     border-top: 5px solid var(--verde-oliva);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.info-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
 }
 
 
 .info-card.featured {
-    background-color: var(--azul-profundo);
-    color: var(--blanco);
+    background-color: var(--blanco);
+    color: var(--texto-oscuro);
     border-top: 5px solid var(--amarillo-luna);
 }
-
 
 .icon-badge {
     position: absolute;
@@ -137,6 +132,7 @@ html {
     font-size: 1.25rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 
 .info-card.featured .icon-badge {
     background-color: var(--naranja-acento);
@@ -163,10 +159,10 @@ html {
     font-weight: bold;
 }
 
-.info-card.featured .card-link {
-    color: var(--amarillo-luna);
-}
 
+.info-card.featured .card-link {
+    color: var(--naranja-acento);
+}
 
 .main-content {
     max-width: 1100px;
@@ -182,7 +178,6 @@ html {
     width: 50%;
     vertical-align: top;
 }
-
 
 .column-left h2 {
     font-size: 1.8rem;
@@ -219,7 +214,6 @@ html {
     color: var(--azul-profundo);
 }
 
-
 .map-box {
     width: 100%;
     height: 250px;
@@ -240,7 +234,6 @@ html {
     color: #777;
     font-weight: 500;
 }
-
 
 .form-box {
     background-color: var(--blanco);
@@ -314,7 +307,6 @@ html {
     color: var(--blanco);
     box-shadow: 0 4px 10px rgba(205, 33, 42, 0.3);
 }
-
 
 @media (max-width: 768px) {
     .cards-container, .main-content {
