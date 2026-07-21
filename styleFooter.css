@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    height: max-content;
+}
+.principal{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    gap: 2rem;
+    height: 15em;
+    width: 100%;
+}
+
+.info-izq{
+    background-color: beige;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    
+    
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: aliceblue;
+padding: 1em;
+}
+.titulo img{
+    height: 3em;
+}
+.enunciado{
+    padding: 2em 1em;
+}
+.redes{
+    display: flex;
+    gap: 2em;
+    
+}
+.redes img{
+    height: 1.3em;
+    width: 1.3em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    align-items: center;
+}
+.info-der{
+    background-color: cadetblue;
+    width: 60%;
+    height: 15em;
+}
+.contactos{
+    display: flex;
+}
+
+.contactos-u{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.contactos-u img{
+    width: 2.5em;
+}
